@@ -1,0 +1,8 @@
+{
+  "name": "breakpoint-detection",
+  "version": "0.1.0",
+  "description": "Pure Javascript Bootstrap breakpoint detection",
+  "main": "index.js",
+  "author": "Kasper Koman <kasper.koman@gmail.com>",
+  "license": "MIT"
+}
