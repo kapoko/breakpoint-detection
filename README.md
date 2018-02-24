@@ -1,4 +1,4 @@
-# breakpoint-detection 
+# breakpoint-detection 💔
 
 Pure Javascript breakpoint detection for Bootstrap. Written in ES6 so only supports ES6 projects for now. 
 
