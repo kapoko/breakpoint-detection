@@ -13,7 +13,7 @@ Heavily inpsired on [Maciej Gurban's Responsive Bootstrap Toolkit](https://githu
 
 ## Usage
 
-Example in ES6 as I use it this way but it should work with common js as well. Using a [debounce function](https://davidwalsh.name/javascript-debounce-function) is **highly** recommended, you don't want to call the `changed` method too often. The example uses the one from [lodash](https://github.com/lodash/lodash)
+Example in ES6 as I use it this way but it should work with common js as well. Using a [debounce function](https://davidwalsh.name/javascript-debounce-function) is **highly** recommended, you don't want to call the `changed` method too often. The example uses the one from [lodash](https://github.com/lodash/lodash), with a debounce time of 250 milliseconds.
 
 ```javascript
 import viewport from 'breakpoint-detection';
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('resize', debounce(() => {
 
         viewport.changed(() => {
-            
+
             // Only gets called when the breakpoint changes
             if (viewport.is('<=sm')) {
                 // Do mobile stuff
