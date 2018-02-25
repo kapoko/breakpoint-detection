@@ -2,7 +2,7 @@
   "name": "breakpoint-detection",
   "version": "0.1.0",
   "description": "Pure Javascript Bootstrap breakpoint detection",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/kapoko/breakpoint-detection"
