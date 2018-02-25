@@ -1,6 +1,6 @@
 {
   "name": "breakpoint-detection",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pure Javascript Bootstrap breakpoint detection",
   "main": "dist/index.js",
   "repository": {
@@ -18,5 +18,7 @@
     "watch": "babel src/index.js --watch --out-file dist/index.js",
     "prepare": "yarn run build"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
