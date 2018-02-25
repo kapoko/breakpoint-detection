@@ -11,7 +11,7 @@ Heavily inpsired on [Maciej Gurban's Responsive Bootstrap Toolkit](https://githu
 1. No jQuery dependency. I use Bootstrap without the javascript side of it, which depends on jQuery. As such, Maciej Gurban's Responsive Bootstrap Toolkit depends on jQuery itself. I needed a version without that dependency. 
 2. It is a stripped down version. It has no EventListeners for example, which gives you more control, but also means you have to take care of it yourself (calling the plugin, debouncing the calls). 
 3. It has some of the same methods as the above mentioned plugin, like `is` and `changed`. Only `changed` checks the inserted dummy divs for visibility, and `is` uses the stored result of `changed`. Because checking the divs for visibility is the most resource heavy action, `is` is much more lightweight. As a result though, we have to use `is` inside the callback function from `changed` (see 'Usage'), so we're sure the visibility has been checked.
-4. Checking the dummy divs for visibilily starts at the smallest breakpoint. Because only one element is visible at a time at any breakpoint, the loop breaks, giving a little performance boost which mobile benefits the most from. 
+4. Checking the dummy divs for visibility starts at the smallest breakpoint. Because only one element is visible at a time at any breakpoint, the loop breaks, giving a little performance boost which mobile benefits the most from. 
 
 ## Usage
 
