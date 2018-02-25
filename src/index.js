@@ -107,24 +107,31 @@ const viewport = (framework) => {
         let expression = splitExpression(expressionStr);
         let requestedBreakpoint = breakpoints.indexOf(expression.breakpointName);
 
+        let result; 
+
         switch(expression.operator) {
             case '>': 
-                if (!expression.orEqual) {
-                    requestedBreakpoint++;
-                }
-                
-                return (currentBreakpoint > requestedBreakpoint) ? true : false;
-            case '<':
-                if (!expression.orEqual) {
+                if (expression.orEqual) {
                     requestedBreakpoint--;
                 }
+                
+                result = (currentBreakpoint > requestedBreakpoint) ? true : false;
+                break;
+            case '<':
+                if (expression.orEqual) {
+                    requestedBreakpoint++;
+                }
 
-                return (currentBreakpoint < requestedBreakpoint) ? true : false;
+                result = (currentBreakpoint < requestedBreakpoint) ? true : false;
+                break;
             case '=':
-                return (currentBreakpoint === requestedBreakpoint) ? true : false;
+                result = (currentBreakpoint === requestedBreakpoint) ? true : false;
+                break;
             default: 
                 break;
         }
+
+        return result;
     }
 
     /**
