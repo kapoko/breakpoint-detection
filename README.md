@@ -1,5 +1,7 @@
 # breakpoint-detection 💔
 
+[![npm version](https://img.shields.io/npm/v/breakpoint-detection.svg)](https://www.npmjs.com/package/breakpoint-detection)
+
 Pure Javascript breakpoint detection for Bootstrap 4.
 
 Heavily inpsired on [Maciej Gurban's Responsive Bootstrap Toolkit](https://github.com/maciej-gurban/responsive-bootstrap-toolkit), even uses some of the same code, but I needed a version without jQuery dependency. 
